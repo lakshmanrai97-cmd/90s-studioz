@@ -26,23 +26,27 @@
     "assets/banner/5.jpg"
   ],
   "photo_product": [
-    "assets/photography/product/_MG_9217.jpg",
-    "assets/photography/product/bottle.png",
-    "assets/photography/product/IMG_7290.JPG",
-    "assets/photography/product/IMG_9021.JPG",
-    "assets/photography/product/IMG_9086.JPG",
-    "assets/photography/product/IMG_9208.JPG",
-    "assets/photography/product/jewel.jpg",
-    "assets/photography/product/jewel1.jpg"
+    "assets/photography/product/gm1.png",
+    "assets/photography/product/gm2.png",
+    "assets/photography/product/gm3.png",
+    "assets/photography/product/gm4.png",
+    "assets/photography/product/jewel.png",
+    "assets/photography/product/jewel1.png",
+    "assets/photography/product/jewel2.png",
+    "assets/photography/product/jewel3.png"
   ],
   "photo_model": [
-    "assets/photography/model/4.jpg",
-    "assets/photography/model/5.jpg"
+    "assets/photography/model/model1.png",
+    "assets/photography/model/model2.png",
+    "assets/photography/model/model3.png",
+    "assets/photography/model/model4.png",
+    "assets/photography/model/model5.png",
+    "assets/photography/model/model6.png"
   ],
   "photo_events": [
     "assets/photography/events/1.jpg",
+    "assets/photography/events/2.jpg",
     "assets/photography/events/3.jpg",
-    "assets/photography/events/8.jpg",
-    "assets/photography/events/9.jpg"
+    "assets/photography/events/4.jpg"
   ]
 }
