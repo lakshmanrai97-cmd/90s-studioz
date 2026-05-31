@@ -1527,8 +1527,8 @@ textarea:focus {
 
 /* Slider aspect sizes */
 .slider-banners .showcase-slide {
-    width: 250px;
-    height: 350px;
+    width: 180px;
+    height: 450px;
 }
 
 .slider-posters .showcase-slide {
@@ -1543,8 +1543,8 @@ textarea:focus {
 
 @media (max-width: 600px) {
     .slider-banners .showcase-slide {
-        width: 210px;
-        height: 295px;
+        width: 130px;
+        height: 330px;
     }
     
     .slider-posters .showcase-slide {
