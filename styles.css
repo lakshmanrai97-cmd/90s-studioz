@@ -1426,3 +1426,14 @@ textarea:focus {
     transform: scale(0.95);
 }
 
+/* ==========================================
+   GRAPHIC DESIGN SLIDE VISIBILITY (CONTAIN)
+   ========================================== */
+.portfolio-row[data-category="design"] .portfolio-row-media {
+    background: #101014; /* Premium dark canvas for logos and designs */
+}
+
+.portfolio-row[data-category="design"] .portfolio-row-media .slide {
+    object-fit: contain; /* Make sure designs are fully visible, never cropped */
+}
+
