@@ -1427,13 +1427,134 @@ textarea:focus {
 }
 
 /* ==========================================
-   GRAPHIC DESIGN SLIDE VISIBILITY (CONTAIN)
+   GRAPHIC DESIGN DYNAMIC SHOWCASE SLIDERS
    ========================================== */
-.portfolio-row[data-category="design"] .portfolio-row-media {
-    background: #101014; /* Premium dark canvas for logos and designs */
+.dynamic-showcase-row {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 2.5rem !important;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    overflow: visible !important;
 }
 
-.portfolio-row[data-category="design"] .portfolio-row-media .slide {
-    object-fit: contain; /* Make sure designs are fully visible, never cropped */
+.showcase-header {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.showcase-header h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--accent-2);
+    margin-bottom: 0.5rem;
+}
+
+.showcase-header p {
+    font-size: 1.05rem;
+    opacity: 0.8;
+    color: var(--text-color);
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.showcase-slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0.8rem 0;
+}
+
+.showcase-slider {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0.5rem;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-1) rgba(255, 255, 255, 0.05);
+}
+
+/* Custom scrollbar */
+.showcase-slider::-webkit-scrollbar {
+    height: 6px;
+}
+
+.showcase-slider::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.showcase-slider::-webkit-scrollbar-thumb {
+    background: var(--accent-1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(226, 0, 116, 0.4);
+}
+
+.showcase-slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #101014; /* Dark slate canvas */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.showcase-slide:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--accent-1);
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(226, 0, 116, 0.3);
+}
+
+.showcase-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure graphic designs never get cropped */
+    border-radius: 10px;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Slider aspect sizes */
+.slider-banners .showcase-slide {
+    width: 320px;
+    height: 200px;
+}
+
+.slider-posters .showcase-slide {
+    width: 250px;
+    height: 350px;
+}
+
+.slider-logos .showcase-slide {
+    width: 170px;
+    height: 170px;
+}
+
+@media (max-width: 600px) {
+    .slider-banners .showcase-slide {
+        width: 270px;
+        height: 170px;
+    }
+    
+    .slider-posters .showcase-slide {
+        width: 210px;
+        height: 295px;
+    }
+    
+    .slider-logos .showcase-slide {
+        width: 140px;
+        height: 140px;
+    }
 }
 
