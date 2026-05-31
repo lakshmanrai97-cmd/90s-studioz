@@ -23,5 +23,22 @@
     "assets/banner/3.jpg",
     "assets/banner/4.jpg",
     "assets/banner/5.jpg"
+  ],
+  "photo_product": [
+    "assets/photography/product/antique_005.JPG",
+    "assets/photography/product/jewel.jpg",
+    "assets/photography/product/jewel1.jpg",
+    "assets/photography/product/package.png"
+  ],
+  "photo_model": [
+    "assets/photography/model/4.jpg",
+    "assets/photography/model/10.jpg",
+    "assets/photography/model/11.jpg"
+  ],
+  "photo_events": [
+    "assets/photography/events/1.jpg",
+    "assets/photography/events/3.jpg",
+    "assets/photography/events/8.jpg",
+    "assets/photography/events/9.jpg"
   ]
 }

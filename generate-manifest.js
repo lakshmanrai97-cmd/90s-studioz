@@ -5,7 +5,10 @@ const path = require('path');
 const directories = {
     posters: 'assets/posters',
     logos: 'assets/logos',
-    banners: 'assets/banner'
+    banners: 'assets/banner',
+    photo_product: 'assets/photography/product',
+    photo_model: 'assets/photography/model',
+    photo_events: 'assets/photography/events'
 };
 
 const manifest = {};

@@ -1541,6 +1541,27 @@ textarea:focus {
     height: 170px;
 }
 
+.slider-photography-product .showcase-slide {
+    width: 260px;
+    height: 260px;
+}
+
+.slider-photography-model .showcase-slide {
+    width: 250px;
+    height: 375px;
+}
+
+.slider-photography-events .showcase-slide {
+    width: 360px;
+    height: 240px;
+}
+
+.slider-photography-product .showcase-slide img,
+.slider-photography-model .showcase-slide img,
+.slider-photography-events .showcase-slide img {
+    object-fit: cover !important;
+}
+
 @media (max-width: 600px) {
     .slider-banners .showcase-slide {
         width: 130px;
@@ -1555,6 +1576,21 @@ textarea:focus {
     .slider-logos .showcase-slide {
         width: 140px;
         height: 140px;
+    }
+
+    .slider-photography-product .showcase-slide {
+        width: 180px;
+        height: 180px;
+    }
+
+    .slider-photography-model .showcase-slide {
+        width: 180px;
+        height: 270px;
+    }
+
+    .slider-photography-events .showcase-slide {
+        width: 260px;
+        height: 173px;
     }
 }
 

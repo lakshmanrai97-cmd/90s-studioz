@@ -582,15 +582,18 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderObserver.observe(viewport);
     };
 
-    // Dynamic Showcase Manifest Loader for Graphic Design
+    // Dynamic Showcase Manifest Loader for Graphic Design and Photography
     const initDynamicDesignShowcases = () => {
         const sliders = {
             posters: document.querySelector('.slider-posters'),
             logos: document.querySelector('.slider-logos'),
-            banners: document.querySelector('.slider-banners')
+            banners: document.querySelector('.slider-banners'),
+            photo_product: document.querySelector('.slider-photography-product'),
+            photo_model: document.querySelector('.slider-photography-model'),
+            photo_events: document.querySelector('.slider-photography-events')
         };
 
-        if (!sliders.posters && !sliders.logos && !sliders.banners) return;
+        if (!Object.values(sliders).some(el => el !== null)) return;
 
         fetch('assets/manifest.json')
             .then(res => {
@@ -599,9 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(data => {
                 for (const [key, paths] of Object.entries(data)) {
-                    // Match manifest keys to slider classes
-                    const sliderClass = key === 'banners' ? 'banners' : key;
-                    const sliderContainer = sliders[sliderClass];
+                    const sliderContainer = sliders[key];
                     if (!sliderContainer || !paths || paths.length === 0) continue;
 
                     let newHtml = '';
@@ -623,7 +624,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             })
             .catch(err => {
-                console.warn('Dynamic design loading fallback active:', err.message);
+                console.warn('Dynamic portfolio loading fallback active:', err.message);
             });
     };
 
