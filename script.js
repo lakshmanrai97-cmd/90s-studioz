@@ -151,16 +151,21 @@ document.addEventListener('DOMContentLoaded', () => {
     hoverContainers.forEach(item => {
         const video = item.querySelector('.portfolio-video, .slide-video');
         const slideshow = item.querySelector('.portfolio-slideshow');
+        const prevBtn = item.querySelector('.prev-slide');
+        const nextBtn = item.querySelector('.next-slide');
         let slideInterval;
+        let currentSlide = 0;
+        let isAutoPlaying = false;
 
-        item.addEventListener('mouseenter', () => {
-            if (video) {
-                video.play().catch(e => console.log('Video autoplay blocked:', e));
-            }
-            if (slideshow) {
+        const startAutoPlay = () => {
+            if (slideshow && !isAutoPlaying) {
                 const slides = slideshow.querySelectorAll('.slide');
-                let currentSlide = 0;
-                if(slides.length > 1) {
+                if (slides.length > 1) {
+                    isAutoPlaying = true;
+                    slides.forEach((slide, idx) => {
+                        if (slide.classList.contains('active')) currentSlide = idx;
+                    });
+                    
                     slideInterval = setInterval(() => {
                         slides[currentSlide].classList.remove('active');
                         currentSlide = (currentSlide + 1) % slides.length;
@@ -168,19 +173,68 @@ document.addEventListener('DOMContentLoaded', () => {
                     }, 1200); // Change image every 1200ms
                 }
             }
+        };
+
+        const stopAutoPlay = () => {
+            if (slideInterval) {
+                clearInterval(slideInterval);
+                slideInterval = null;
+            }
+            isAutoPlaying = false;
+        };
+
+        const navigateSlide = (direction) => {
+            if (slideshow) {
+                const slides = slideshow.querySelectorAll('.slide');
+                if (slides.length > 1) {
+                    stopAutoPlay(); // Halt auto cycles on manual navigate
+                    
+                    slides[currentSlide].classList.remove('active');
+                    if (direction === 'next') {
+                        currentSlide = (currentSlide + 1) % slides.length;
+                    } else if (direction === 'prev') {
+                        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                    }
+                    slides[currentSlide].classList.add('active');
+                }
+            }
+        };
+
+        item.addEventListener('mouseenter', () => {
+            if (video) {
+                video.play().catch(e => console.log('Video autoplay blocked:', e));
+            }
+            startAutoPlay();
         });
 
         item.addEventListener('mouseleave', () => {
             if (video) {
                 video.pause();
             }
+            stopAutoPlay();
             if (slideshow) {
-                clearInterval(slideInterval);
                 const slides = slideshow.querySelectorAll('.slide');
                 slides.forEach(s => s.classList.remove('active'));
-                if(slides.length > 0) slides[0].classList.add('active');
+                if (slides.length > 0) {
+                    slides[0].classList.add('active');
+                    currentSlide = 0;
+                }
             }
         });
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navigateSlide('prev');
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                navigateSlide('next');
+            });
+        }
     });
 
     // Portfolio Category Filtering Logic

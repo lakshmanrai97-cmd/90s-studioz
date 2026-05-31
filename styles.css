@@ -1365,3 +1365,64 @@ textarea:focus {
     transform: translateY(0);
 }
 
+/* ==========================================
+   PORTFOLIO SLIDESHOW MANUAL NAVIGATION
+   ========================================== */
+.portfolio-row-media {
+    position: relative;
+}
+
+.slideshow-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    pointer-events: none;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-row-media:hover .slideshow-nav {
+    opacity: 1;
+}
+
+.slide-nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(39, 35, 67, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    line-height: 1;
+    padding-bottom: 4px; /* Align arrows vertically */
+}
+
+.slide-nav-btn:hover {
+    background: var(--accent-1);
+    border-color: var(--accent-1);
+    color: #ffffff;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(226, 0, 116, 0.65);
+}
+
+.slide-nav-btn:active {
+    transform: scale(0.95);
+}
+
