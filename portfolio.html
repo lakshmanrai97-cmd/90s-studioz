@@ -533,21 +533,25 @@
                     </div>
 
                     <!-- Photography Items -->
-                    <div class="portfolio-row category-item dynamic-showcase-row" data-category="photo">
-                        <div class="showcase-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; width: 100%;">
-                            <div style="flex: 1; min-width: 280px;">
-                                <h2>Product Shoots</h2>
-                                <p>High-end studio captures tailored for luxury retail, branding, and commercial catalogs, focusing on lighting precision and structural details.</p>
+                    <div class="portfolio-row category-item" data-category="photo">
+                        <div class="portfolio-row-media img-placeholder" style="cursor: pointer;"
+                            onclick="window.location.href='product-photography.html'">
+                            <div class="portfolio-slideshow">
+                                <img src="assets/jewel.jpg" alt="Product Shoot" class="slide active">
+                                <img src="assets/jewel1.jpg" alt="Product Shoot" class="slide">
+                                <img src="assets/package.png" alt="Product Shoot" class="slide">
+                                <img src="assets/antique_005.JPG" alt="Product Shoot" class="slide">
                             </div>
-                            <a href="product-photography.html" class="btn-primary" style="font-size: 0.85rem; padding: 0.6rem 1.4rem; text-decoration: none; align-self: center; margin-bottom: 0.5rem;">Launch Interactive Gallery</a>
+                            <div class="media-hover-overlay">
+                                <span class="overlay-text">Launch Gallery</span>
+                            </div>
                         </div>
-                        <div class="showcase-slider-wrapper">
-                            <div class="showcase-slider slider-photography-product">
-                                <div class="showcase-slide"><img src="assets/photography/product/jewel.jpg" alt="Luxury Gold Jewelry Shoot"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/jewel1.jpg" alt="Luxury Silver Ornament Shoot"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/package.png" alt="Retail Packaging Product Shoot"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/antique_005.JPG" alt="Antique Glass Jar Shoot"></div>
-                            </div>
+                        <div class="portfolio-row-content">
+                            <h2>Product Shoot</h2>
+                            <p>High-quality product photography designed to highlight features, textures, and details.
+                                Perfect for e-commerce, catalogs, and promotional materials.</p>
+                            <a href="product-photography.html" class="btn-primary"
+                                style="margin-top: 1.5rem; align-self: flex-start; text-decoration: none;">Launch Showcase</a>
                         </div>
                     </div>
                     <div class="portfolio-row category-item dynamic-showcase-row" data-category="photo">
