@@ -13,6 +13,7 @@
     "assets/logos/cadini_logo.png",
     "assets/logos/crafteria_logo.png",
     "assets/logos/GEENAS.png",
+    "assets/logos/gota_moda.png",
     "assets/logos/modern.png",
     "assets/logos/natural_health_logo.png",
     "assets/logos/zamzam.png"
@@ -25,16 +26,18 @@
     "assets/banner/5.jpg"
   ],
   "photo_product": [
-    "assets/photography/product/antique_005.JPG",
+    "assets/photography/product/_MG_9217.jpg",
     "assets/photography/product/bottle.png",
+    "assets/photography/product/IMG_7290.JPG",
+    "assets/photography/product/IMG_9021.JPG",
+    "assets/photography/product/IMG_9086.JPG",
+    "assets/photography/product/IMG_9208.JPG",
     "assets/photography/product/jewel.jpg",
-    "assets/photography/product/jewel1.jpg",
-    "assets/photography/product/package.png"
+    "assets/photography/product/jewel1.jpg"
   ],
   "photo_model": [
     "assets/photography/model/4.jpg",
-    "assets/photography/model/10.jpg",
-    "assets/photography/model/11.jpg"
+    "assets/photography/model/5.jpg"
   ],
   "photo_events": [
     "assets/photography/events/1.jpg",
