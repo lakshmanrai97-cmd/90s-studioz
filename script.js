@@ -145,46 +145,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Portfolio Hover Video Logic
-    const portfolioGrid = document.getElementById('portfolioGrid') || document.getElementById('portfolioCarousel');
+    // Portfolio Hover Video & Slideshow Logic
+    const hoverContainers = document.querySelectorAll('.portfolio-item, .portfolio-row-media');
 
-    if (portfolioGrid) {
-        const portfolioItems = portfolioGrid.querySelectorAll('.portfolio-item');
-        portfolioItems.forEach(item => {
-            const video = item.querySelector('.portfolio-video');
-            const slideshow = item.querySelector('.portfolio-slideshow');
-            let slideInterval;
+    hoverContainers.forEach(item => {
+        const video = item.querySelector('.portfolio-video, .slide-video');
+        const slideshow = item.querySelector('.portfolio-slideshow');
+        let slideInterval;
 
-            item.addEventListener('mouseenter', () => {
-                if (video) {
-                    video.play().catch(e => console.log('Video autoplay blocked:', e));
+        item.addEventListener('mouseenter', () => {
+            if (video) {
+                video.play().catch(e => console.log('Video autoplay blocked:', e));
+            }
+            if (slideshow) {
+                const slides = slideshow.querySelectorAll('.slide');
+                let currentSlide = 0;
+                if(slides.length > 1) {
+                    slideInterval = setInterval(() => {
+                        slides[currentSlide].classList.remove('active');
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        slides[currentSlide].classList.add('active');
+                    }, 1200); // Change image every 1200ms
                 }
-                if (slideshow) {
-                    const slides = slideshow.querySelectorAll('.slide');
-                    let currentSlide = 0;
-                    if(slides.length > 1) {
-                        slideInterval = setInterval(() => {
-                            slides[currentSlide].classList.remove('active');
-                            currentSlide = (currentSlide + 1) % slides.length;
-                            slides[currentSlide].classList.add('active');
-                        }, 1200); // Change image every 1200ms
-                    }
-                }
-            });
-
-            item.addEventListener('mouseleave', () => {
-                if (video) {
-                    video.pause();
-                }
-                if (slideshow) {
-                    clearInterval(slideInterval);
-                    const slides = slideshow.querySelectorAll('.slide');
-                    slides.forEach(s => s.classList.remove('active'));
-                    if(slides.length > 0) slides[0].classList.add('active');
-                }
-            });
+            }
         });
-    }
+
+        item.addEventListener('mouseleave', () => {
+            if (video) {
+                video.pause();
+            }
+            if (slideshow) {
+                clearInterval(slideInterval);
+                const slides = slideshow.querySelectorAll('.slide');
+                slides.forEach(s => s.classList.remove('active'));
+                if(slides.length > 0) slides[0].classList.add('active');
+            }
+        });
+    });
 
     // Portfolio Category Filtering Logic
     const filterButtons = document.querySelectorAll('.filter-btn');
