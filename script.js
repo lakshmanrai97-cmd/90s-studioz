@@ -582,7 +582,55 @@ document.addEventListener('DOMContentLoaded', () => {
         sliderObserver.observe(viewport);
     };
 
+    // Dynamic Showcase Manifest Loader for Graphic Design
+    const initDynamicDesignShowcases = () => {
+        const sliders = {
+            posters: document.querySelector('.slider-posters'),
+            logos: document.querySelector('.slider-logos'),
+            banners: document.querySelector('.slider-banners')
+        };
+
+        if (!sliders.posters && !sliders.logos && !sliders.banners) return;
+
+        fetch('assets/manifest.json')
+            .then(res => {
+                if (!res.ok) throw new Error('Manifest not found');
+                return res.json();
+            })
+            .then(data => {
+                for (const [key, paths] of Object.entries(data)) {
+                    // Match manifest keys to slider classes
+                    const sliderClass = key === 'banners' ? 'banners' : key;
+                    const sliderContainer = sliders[sliderClass];
+                    if (!sliderContainer || !paths || paths.length === 0) continue;
+
+                    let newHtml = '';
+                    paths.forEach(imagePath => {
+                        const filename = imagePath.split('/').pop().split('.')[0];
+                        const readableName = filename
+                            .replace(/[_-]/g, ' ')
+                            .replace(/\b\w/g, c => c.toUpperCase());
+
+                        newHtml += `<div class="showcase-slide"><img src="${imagePath}" alt="${readableName}"></div>`;
+                    });
+
+                    // Zero-layout-shift DOM updater: only update if contents changed
+                    const cleanHtml = newHtml.replace(/\s+/g, '');
+                    const currentCleanHtml = sliderContainer.innerHTML.replace(/\s+/g, '');
+                    if (cleanHtml !== currentCleanHtml) {
+                        sliderContainer.innerHTML = newHtml;
+                    }
+                }
+            })
+            .catch(err => {
+                console.warn('Dynamic design loading fallback active:', err.message);
+            });
+    };
+
     // Initialize Instagram Reels Slider
     initInstagramReelsSlider();
+
+    // Initialize Dynamic Showcase Manifest Loader
+    initDynamicDesignShowcases();
 
 });
