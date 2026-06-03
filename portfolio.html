@@ -22,7 +22,7 @@
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#contact" class="btn-primary">Contact Us</a></li>
+                <!-- <li><a href="index.html#contact" class="btn-primary">Contact Us</a></li> -->
             </ul>
         </nav>
         <div class="hamburger">
@@ -41,7 +41,6 @@
                     <button class="filter-btn" data-filter="video">Videography</button>
                     <button class="filter-btn" data-filter="photo">Photography</button>
                     <button class="filter-btn" data-filter="design">Graphic Design</button>
-                    <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
                 </div>
             </div>
         </section>
@@ -54,78 +53,38 @@
                     <div class="portfolio-row category-item has-row-slider" data-category="video">
                         <div class="video-slider-wrapper">
 
-                            <!-- Video Slider Header -->
-                            <div class="video-slider-header">
-                                <div class="reel-badge">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                    </svg>
-                                    Videography Showcase
-                                </div>
-                                <div class="video-slider-nav">
-                                    <button class="vid-nav-btn prev-vid-btn" aria-label="Previous Video">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <polyline points="15 18 9 12 15 6"></polyline>
-                                        </svg>
-                                    </button>
-                                    <div class="vid-slide-indicator">
-                                        <span class="current-vid-slide">1</span> / <span
-                                            class="total-vid-slides">6</span>
-                                    </div>
-                                    <button class="vid-nav-btn next-vid-btn" aria-label="Next Video">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <polyline points="9 18 15 12 9 6"></polyline>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
+                            <!-- Left and Right Slider Arrows overlaying the viewport -->
+                            <button class="vid-nav-btn absolute-nav-btn prev-vid-btn" aria-label="Previous Video">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="vid-nav-btn absolute-nav-btn next-vid-btn" aria-label="Next Video">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
 
                             <!-- Slider Viewport Window -->
                             <div class="video-slider-viewport">
                                 <div class="video-slider-track" style="--active-index: 0;">
 
-                                    <!-- Slide 1: Cinematic Creative Film -->
+                                    <!-- Slide 1: modernartscollege -->
                                     <div class="video-slide-card active" data-index="0"
-                                        data-link="https://www.instagram.com/reel/DYZyfiWCO_-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-                                        <video class="slide-video"
-                                            src="https://res.cloudinary.com/demo/video/upload/c_fill,h_1920,w_1080/dog.mp4"
-                                            loop playsinline muted></video>
+                                        data-link="https://www.instagram.com/modernartscollege/">
+                                        <video class="slide-video" src="assets/reels/12th%20completed.mp4" loop
+                                            playsinline muted></video>
 
                                         <!-- Instagram UI Overlays -->
                                         <div class="video-overlay-panel">
                                             <div class="card-insta-header">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
-                                                    <path
-                                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
-                                                    </path>
-                                                    <circle cx="12" cy="13" r="4"></circle>
-                                                </svg>
+
                                             </div>
-                                            <div class="card-insta-actions">
-                                                <div class="action-btn like-btn">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
-                                                        class="heart-icon">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                    <span class="like-count">1.4K</span>
-                                                </div>
-                                                <div class="music-disc-container">
-                                                    <div class="music-disc"><img src="assets/logo.png" alt="Audio">
-                                                    </div>
-                                                </div>
-                                            </div>
+
 
                                             <!-- Title & Description Info Overlay -->
                                             <div class="video-card-details">
@@ -134,13 +93,8 @@
                                                     <span class="card-username">ninetiestudioz</span>
                                                     <span class="card-follow-badge">Follow</span>
                                                 </div>
-                                                <h3 class="card-title">Cinematic Creative Film</h3>
-                                                <p class="card-desc">Premium artistic storytelling featuring advanced
-                                                    composition, cinematic grading, and narrative structure designed for
-                                                    maximum digital impact.</p>
-
                                                 <div class="card-footer-action">
-                                                    <a href="https://www.instagram.com/reel/DYWUaJGpB8c/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                                    <a href="https://www.instagram.com/modernartscollegetnagar?igsh=MmgybWdzbXEzMWI1"
                                                         target="_blank" class="card-instagram-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -168,51 +122,21 @@
                                         </div>
                                     </div>
 
-                                    <!-- Slide 2: Brand Narrative Launch -->
+                                    <!-- Slide 2: dr.pujitabandi_entsurgeon -->
                                     <div class="video-slide-card" data-index="1"
-                                        data-link="https://www.instagram.com/reel/DUIpZookwdG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-                                        <video class="slide-video"
-                                            src="https://res.cloudinary.com/demo/video/upload/c_fill,h_1920,w_1080/elephants.mp4"
-                                            loop playsinline muted></video>
+                                        data-link="https://www.instagram.com/dr.pujitabandi_entsurgeon?igsh=ZzkxdmJvaHhvbGVp">
+                                        <video class="slide-video" src="assets/reels/Divorce%20ah3.mp4" loop playsinline
+                                            muted></video>
 
                                         <div class="video-overlay-panel">
-                                            <div class="card-insta-header">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
-                                                    <path
-                                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
-                                                    </path>
-                                                    <circle cx="12" cy="13" r="4"></circle>
-                                                </svg>
-                                            </div>
-                                            <div class="card-insta-actions">
-                                                <div class="action-btn like-btn">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
-                                                        class="heart-icon">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                    <span class="like-count">2.1K</span>
-                                                </div>
-                                                <div class="music-disc-container">
-                                                    <div class="music-disc"><img src="assets/logo.png" alt="Audio">
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="video-card-details">
                                                 <div class="card-user-row">
                                                     <img src="assets/logo.png" alt="Logo" class="card-avatar">
                                                     <span class="card-username">ninetiestudioz</span>
                                                     <span class="card-follow-badge">Follow</span>
                                                 </div>
-                                                <h3 class="card-title">Brand Narrative Launch</h3>
-                                                <p class="card-desc">High-energy commercial presentation crafted to
-                                                    launch key collections and brand milestones. Engineered to captivate
-                                                    attention from the initial beat.</p>
                                                 <div class="card-footer-action">
-                                                    <a href="https://www.instagram.com/reel/DV0uNQSEiTR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                                    <a href="https://www.instagram.com/dr.pujitabandi_entsurgeon?igsh=ZzkxdmJvaHhvbGVp"
                                                         target="_blank" class="card-instagram-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -240,50 +164,21 @@
                                         </div>
                                     </div>
 
-                                    <!-- Slide 3: Editorial Style Campaign -->
+                                    <!-- Slide 3: hi5_beauty_and_mehndhi_studio -->
                                     <div class="video-slide-card" data-index="2"
-                                        data-link="https://www.instagram.com/reel/DXzChIzpFVu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-                                        <video class="slide-video" src="https://www.w3schools.com/html/mov_bbb.mp4" loop
+                                        data-link="https://www.instagram.com/hi5_makeupartistryby_madhu/">
+                                        <video class="slide-video" src="assets/reels/Before%20after%20makeup.mp4" loop
                                             playsinline muted></video>
 
                                         <div class="video-overlay-panel">
-                                            <div class="card-insta-header">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
-                                                    <path
-                                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
-                                                    </path>
-                                                    <circle cx="12" cy="13" r="4"></circle>
-                                                </svg>
-                                            </div>
-                                            <div class="card-insta-actions">
-                                                <div class="action-btn like-btn">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
-                                                        class="heart-icon">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                    <span class="like-count">3.8K</span>
-                                                </div>
-                                                <div class="music-disc-container">
-                                                    <div class="music-disc"><img src="assets/logo.png" alt="Audio">
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="video-card-details">
                                                 <div class="card-user-row">
                                                     <img src="assets/logo.png" alt="Logo" class="card-avatar">
                                                     <span class="card-username">ninetiestudioz</span>
                                                     <span class="card-follow-badge">Follow</span>
                                                 </div>
-                                                <h3 class="card-title">Editorial Style Campaign</h3>
-                                                <p class="card-desc">A visually stunning lifestyle and fashion visual
-                                                    sequence highlighting aesthetics, textures, and fluid choreography.
-                                                </p>
                                                 <div class="card-footer-action">
-                                                    <a href="https://www.instagram.com/reel/DWQBEiUE-Ej/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                                    <a href="https://www.instagram.com/hi5_beauty_and_mehndhi_studio/"
                                                         target="_blank" class="card-instagram-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -313,49 +208,20 @@
 
                                     <!-- Slide 4: Signature Corporate Story -->
                                     <div class="video-slide-card" data-index="3"
-                                        data-link="https://www.instagram.com/reel/DVvhhJwjbPK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-                                        <video class="slide-video"
-                                            src="https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/one-by-one-person-detection.mp4"
-                                            loop playsinline muted></video>
+                                        data-link="assets/reels/2%20options.mp4">
+                                        <video class="slide-video" src="assets/reels/2%20options.mp4" loop playsinline
+                                            muted></video>
 
                                         <div class="video-overlay-panel">
-                                            <div class="card-insta-header">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
-                                                    <path
-                                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
-                                                    </path>
-                                                    <circle cx="12" cy="13" r="4"></circle>
-                                                </svg>
-                                            </div>
-                                            <div class="card-insta-actions">
-                                                <div class="action-btn like-btn">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
-                                                        class="heart-icon">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                    <span class="like-count">1.9K</span>
-                                                </div>
-                                                <div class="music-disc-container">
-                                                    <div class="music-disc"><img src="assets/logo.png" alt="Audio">
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                             <div class="video-card-details">
                                                 <div class="card-user-row">
                                                     <img src="assets/logo.png" alt="Logo" class="card-avatar">
                                                     <span class="card-username">ninetiestudioz</span>
                                                     <span class="card-follow-badge">Follow</span>
                                                 </div>
-                                                <h3 class="card-title">Signature Corporate Story</h3>
-                                                <p class="card-desc">Corporate storytelling at its finest, showing
-                                                    corporate identity and professional vision with custom lighting
-                                                    setups and high-end rendering.</p>
                                                 <div class="card-footer-action">
-                                                    <a href="https://www.instagram.com/reel/DUvYxVElsNi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                                    <a href="https://www.instagram.com/drsharmilasenthilkumar?igsh=OGVlYXh6bmU3bWRs"
                                                         target="_blank" class="card-instagram-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -383,122 +249,23 @@
                                         </div>
                                     </div>
 
-                                    <!-- Slide 5: Premium Event Highlights -->
+                                    <!-- Slide 5: resin -->
                                     <div class="video-slide-card" data-index="4"
-                                        data-link="https://www.instagram.com/reel/DXMcddPAN5r/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-                                        <video class="slide-video"
-                                            src="https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/face-demographics-walking.mp4"
-                                            loop playsinline muted></video>
-
-                                        <div class="video-overlay-panel">
-                                            <div class="card-insta-header">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
-                                                    <path
-                                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
-                                                    </path>
-                                                    <circle cx="12" cy="13" r="4"></circle>
-                                                </svg>
-                                            </div>
-                                            <div class="card-insta-actions">
-                                                <div class="action-btn like-btn">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
-                                                        class="heart-icon">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                    <span class="like-count">2.5K</span>
-                                                </div>
-                                                <div class="music-disc-container">
-                                                    <div class="music-disc"><img src="assets/logo.png" alt="Audio">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="video-card-details">
-                                                <div class="card-user-row">
-                                                    <img src="assets/logo.png" alt="Logo" class="card-avatar">
-                                                    <span class="card-username">ninetiestudioz</span>
-                                                    <span class="card-follow-badge">Follow</span>
-                                                </div>
-                                                <h3 class="card-title">Premium Event Highlights</h3>
-                                                <p class="card-desc">Event highlight production capturing the energy,
-                                                    excitement, and crucial key beats of dynamic visual celebrations.
-                                                </p>
-                                                <div class="card-footer-action">
-                                                    <a href="https://www.instagram.com/reel/DXMcddPAN5r/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                                                        target="_blank" class="card-instagram-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path
-                                                                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
-                                                            </path>
-                                                            <polyline points="15 3 21 3 21 9"></polyline>
-                                                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                                                        </svg>
-                                                        View on Instagram
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="video-play-overlay">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="#fff">
-                                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                                </svg>
-                                            </div>
-                                            <div class="video-progress-line">
-                                                <div class="progress-line-fill"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Slide 6: Creative Studio Work -->
-                                    <div class="video-slide-card" data-index="5"
-                                        data-link="https://www.instagram.com/reel/DUIpZookwdG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-                                        <video class="slide-video" src="https://www.w3schools.com/html/movie.mp4" loop
+                                        data-link="https://www.instagram.com/solasta_resin_art?igsh=aGl5d3dzeWE4YWp1">
+                                        <video class="slide-video" src="assets/reels/Confused by resin.mp4" loop
                                             playsinline muted></video>
 
                                         <div class="video-overlay-panel">
-                                            <div class="card-insta-header">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                    viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
-                                                    <path
-                                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
-                                                    </path>
-                                                    <circle cx="12" cy="13" r="4"></circle>
-                                                </svg>
-                                            </div>
-                                            <div class="card-insta-actions">
-                                                <div class="action-btn like-btn">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
-                                                        class="heart-icon">
-                                                        <path
-                                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                                        </path>
-                                                    </svg>
-                                                    <span class="like-count">4.3K</span>
-                                                </div>
-                                                <div class="music-disc-container">
-                                                    <div class="music-disc"><img src="assets/logo.png" alt="Audio">
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                             <div class="video-card-details">
                                                 <div class="card-user-row">
                                                     <img src="assets/logo.png" alt="Logo" class="card-avatar">
                                                     <span class="card-username">ninetiestudioz</span>
                                                     <span class="card-follow-badge">Follow</span>
                                                 </div>
-                                                <h3 class="card-title">Creative Studio Work</h3>
-                                                <p class="card-desc">Conceptual and artistic production integrating
-                                                    vibrant HSL gradients, bold styling, and sound choreography for
-                                                    premium digital networks.</p>
+
                                                 <div class="card-footer-action">
-                                                    <a href="https://www.instagram.com/reel/DUIpZookwdG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                                    <a href="https://www.instagram.com/solasta_resin_art?igsh=aGl5d3dzeWE4YWp1"
                                                         target="_blank" class="card-instagram-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -525,7 +292,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
 
@@ -541,14 +307,22 @@
                         </div>
                         <div class="showcase-slider-wrapper">
                             <div class="showcase-slider slider-photography-product">
-                                <div class="showcase-slide"><img src="assets/photography/product/gm1.png" alt="Luxury Cosmetic Glass Jar Shoot"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/gm2.png" alt="Cosmetic Product Packaging Shoot"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/gm3.png" alt="Luxury Skincare Cream Bottle"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/gm4.png" alt="Cosmetic Bottle Product Showcase"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/jewel.png" alt="Luxury Gold Ring Jewelry Shoot"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/jewel1.png" alt="Exquisite Silver Diamond Ring"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/jewel2.png" alt="Luxury Gold Necklace Detail Capture"></div>
-                                <div class="showcase-slide"><img src="assets/photography/product/jewel3.png" alt="Luxury Silver Ornament Shoot"></div>
+                                <div class="showcase-slide"><img src="assets/photography/product/gm1.png"
+                                        alt="premium denim wears"></div>
+                                <div class="showcase-slide"><img src="assets/photography/product/gm2.png"
+                                        alt="premium denim wears"></div>
+                                <div class="showcase-slide"><img src="assets/photography/product/gm3.png"
+                                        alt="premium denim wears"></div>
+                                <div class="showcase-slide"><img src="assets/photography/product/gm4.png"
+                                        alt="premium denim wears"></div>
+                                <div class="showcase-slide"><img src="assets/photography/product/jewel.png"
+                                        alt="Luxury Gold Jewelry Shoot"></div>
+                                <div class="showcase-slide"><img src="assets/photography/product/jewel1.png"
+                                        alt="Luxury Gold Jewelry Shoot"></div>
+                                <div class="showcase-slide"><img src="assets/photography/product/jewel2.png"
+                                        alt="Luxury Gold Jewelry Shoot"></div>
+                                <div class="showcase-slide"><img src="assets/photography/product/jewel3.png"
+                                        alt="Luxury Gold Jewelry Shoot"></div>
                             </div>
                         </div>
                     </div>
@@ -560,12 +334,18 @@
                         </div>
                         <div class="showcase-slider-wrapper">
                             <div class="showcase-slider slider-photography-model">
-                                <div class="showcase-slide"><img src="assets/photography/model/model1.png" alt="Fashion Editorial Portrait"></div>
-                                <div class="showcase-slide"><img src="assets/photography/model/model2.png" alt="High Fashion Concept Capture"></div>
-                                <div class="showcase-slide"><img src="assets/photography/model/model3.png" alt="Studio Editorial Portrait Model"></div>
-                                <div class="showcase-slide"><img src="assets/photography/model/model4.png" alt="Creative Editorial Fashion Capture"></div>
-                                <div class="showcase-slide"><img src="assets/photography/model/model5.png" alt="Professional Outdoor Model Shoot"></div>
-                                <div class="showcase-slide"><img src="assets/photography/model/model6.png" alt="Fashion Magazine Concept Shoot"></div>
+                                <div class="showcase-slide"><img src="assets/photography/model/model1.png"
+                                        alt="Fashion Editorial Portrait"></div>
+                                <div class="showcase-slide"><img src="assets/photography/model/model2.png"
+                                        alt="High Fashion Concept Capture"></div>
+                                <div class="showcase-slide"><img src="assets/photography/model/model3.png"
+                                        alt="Studio Editorial Portrait Model"></div>
+                                <div class="showcase-slide"><img src="assets/photography/model/model4.png"
+                                        alt="Creative Editorial Fashion Capture"></div>
+                                <div class="showcase-slide"><img src="assets/photography/model/model5.png"
+                                        alt="Professional Outdoor Model Shoot"></div>
+                                <div class="showcase-slide"><img src="assets/photography/model/model6.png"
+                                        alt="Fashion Magazine Concept Shoot"></div>
                             </div>
                         </div>
                     </div>
@@ -577,10 +357,14 @@
                         </div>
                         <div class="showcase-slider-wrapper">
                             <div class="showcase-slider slider-photography-events">
-                                <div class="showcase-slide"><img src="assets/photography/events/1.jpg" alt="Corporate Grand Opening Ceremony"></div>
-                                <div class="showcase-slide"><img src="assets/photography/events/2.jpg" alt="TIMELINE Grand Opening Celebration"></div>
-                                <div class="showcase-slide"><img src="assets/photography/events/3.jpg" alt="Corporate Inauguration Milestone"></div>
-                                <div class="showcase-slide"><img src="assets/photography/events/4.jpg" alt="Vibrant Candid Birthday Event"></div>
+                                <div class="showcase-slide"><img src="assets/photography/events/1.jpg"
+                                        alt="Corporate Grand Opening Ceremony"></div>
+                                <div class="showcase-slide"><img src="assets/photography/events/2.jpg"
+                                        alt="Traditional Rituals"></div>
+                                <div class="showcase-slide"><img src="assets/photography/events/3.jpg"
+                                        alt="Birthday Party"></div>
+                                <div class="showcase-slide"><img src="assets/photography/events/10.jpeg"
+                                        alt="Wedding Events"></div>
                             </div>
                         </div>
                     </div>
@@ -594,10 +378,10 @@
                         </div>
                         <div class="showcase-slider-wrapper">
                             <div class="showcase-slider slider-posters">
-                                <div class="showcase-slide"><img src="assets/posters/INVITES_3.jpg"
-                                        alt="Custom Event Invitation Poster"></div>
                                 <div class="showcase-slide"><img src="assets/posters/christmas_poster.png"
                                         alt="Christmas Event Poster"></div>
+                                <div class="showcase-slide"><img src="assets/posters/INVITES_3.jpg"
+                                        alt="Custom Event Invitation Poster"></div>
                                 <div class="showcase-slide"><img src="assets/posters/janmashtami.jpg"
                                         alt="Janmashtami Event Poster"></div>
                                 <div class="showcase-slide"><img src="assets/posters/navratri.png"
@@ -615,6 +399,8 @@
                             <div class="showcase-slider slider-logos">
                                 <div class="showcase-slide"><img src="assets/logos/adhikai_logo.png" alt="Adhikai Logo">
                                 </div>
+                                <div class="showcase-slide"><img src="assets/logos/askabhi.png" alt="Askabhi Logo">
+                                </div>
                                 <div class="showcase-slide"><img src="assets/logos/briyani_shop_logo.png"
                                         alt="Briyani Shop Logo"></div>
                                 <div class="showcase-slide"><img src="assets/logos/broadwayman_logo.png"
@@ -624,6 +410,9 @@
                                 <div class="showcase-slide"><img src="assets/logos/crafteria_logo.png"
                                         alt="Crafteria Logo"></div>
                                 <div class="showcase-slide"><img src="assets/logos/GEENAS.png" alt="Geenas Logo"></div>
+                                <div class="showcase-slide"><img src="assets/logos/gota_moda.png" alt="Gota Moda Logo">
+                                </div>
+                                <div class="showcase-slide"><img src="assets/logos/modern.png" alt="Modern Logo"></div>
                                 <div class="showcase-slide"><img src="assets/logos/natural_health_logo.png"
                                         alt="Natural Health Logo"></div>
                                 <div class="showcase-slide"><img src="assets/logos/zamzam.png" alt="Zamzam Logo"></div>
@@ -642,33 +431,29 @@
                                 <div class="showcase-slide"><img src="assets/banner/2.jpg" alt="Design Banner 2"></div>
                                 <div class="showcase-slide"><img src="assets/banner/3.jpg" alt="Design Banner 3"></div>
                                 <div class="showcase-slide"><img src="assets/banner/4.jpg" alt="Design Banner 4"></div>
+                                <div class="showcase-slide"><img src="assets/banner/5.jpg" alt="Design Banner 5"></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Digital Marketing Items -->
-                    <div class="portfolio-row category-item" data-category="marketing">
-                        <div class="portfolio-row-media img-placeholder">
-                            <video class="portfolio-video"
-                                src="https://videos.pexels.com/video-files/7688755/7688755-hd_1920_1080_25fps.mp4" muted
-                                loop playsinline></video>
+                    <div class="portfolio-row category-item dynamic-showcase-row" data-category="design">
+                        <div class="showcase-header">
+                            <h2>Branding</h2>
+                            <p>Complete visual identity systems, bespoke corporate stationery, premium packaging, and
+                                brand guidelines crafted to establish a powerful and unforgettable market presence.</p>
                         </div>
-                        <div class="portfolio-row-content">
-                            <h2>Ad Campaigns</h2>
-                            <p>Data-driven targeted advertising campaigns across multiple platforms to maximize your ROI
-                                and reach your ideal customers effectively.</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-row category-item" data-category="marketing">
-                        <div class="portfolio-row-media img-placeholder">
-                            <div class="portfolio-slideshow">
-                                <img src="assets/5.jpg" alt="Marketing 2" class="slide active">
+                        <div class="showcase-slider-wrapper">
+                            <div class="showcase-slider slider-branding">
+                                <div class="showcase-slide"><img src="assets/branding/C.jpg" alt="Cosmetics Branding">
+                                </div>
+                                <div class="showcase-slide"><img src="assets/branding/cadini.jpg" alt="Cadini Branding">
+                                </div>
+                                <div class="showcase-slide"><img src="assets/branding/natural+.jpg"
+                                        alt="Natural Branding"></div>
+                                <div class="showcase-slide"><img src="assets/branding/psm.jpg" alt="PSM Branding"></div>
+                                <div class="showcase-slide"><img src="assets/branding/zamzam.png" alt="Zamzam Branding">
+                                </div>
                             </div>
-                        </div>
-                        <div class="portfolio-row-content">
-                            <h2>SEO Strategies</h2>
-                            <p>Comprehensive search engine optimization services to improve your website's visibility,
-                                drive organic traffic, and outrank the competition.</p>
                         </div>
                     </div>
                 </div>
@@ -684,7 +469,8 @@
             <div class="footer-logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo"></div>
             <p>&copy; 2026 90'sstudioz, All rights reserved.</p>
             <div class="socials">
-                <a href="#" aria-label="Instagram">
+                <a href="https://www.instagram.com/ninetiestudioz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-instagram">

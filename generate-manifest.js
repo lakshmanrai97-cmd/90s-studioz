@@ -6,6 +6,7 @@ const directories = {
     posters: 'assets/posters',
     logos: 'assets/logos',
     banners: 'assets/banner',
+    branding: 'assets/branding',
     photo_product: 'assets/photography/product',
     photo_model: 'assets/photography/model',
     photo_events: 'assets/photography/events'

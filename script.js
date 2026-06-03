@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (totalIndicator) totalIndicator.textContent = totalSlides;
 
-        // Center-aligned slide update logic
+        // Start-aligned slide update logic (left-aligned)
         const updateSlider = () => {
             const viewportWidth = viewport.getBoundingClientRect().width;
             const cardWidth = slides[0].getBoundingClientRect().width;
@@ -330,10 +330,30 @@ document.addEventListener('DOMContentLoaded', () => {
             const style = window.getComputedStyle(wrapper);
             const gap = parseFloat(style.gap) || 32;
 
-            // Center calculation formula
-            let translateVal = (viewportWidth / 2) - (cardWidth / 2) - (activeIndex * (cardWidth + gap));
+            // Start-aligned calculation formula
+            let translateVal = - (activeIndex * (cardWidth + gap));
             
             wrapper.style.transform = `translateX(${translateVal}px)`;
+
+            // Toggle floating arrows visibility based on bounds
+            if (prevBtn) {
+                if (activeIndex === 0) {
+                    prevBtn.style.opacity = '0';
+                    prevBtn.style.pointerEvents = 'none';
+                } else {
+                    prevBtn.style.opacity = '1';
+                    prevBtn.style.pointerEvents = 'auto';
+                }
+            }
+            if (nextBtn) {
+                if (activeIndex === totalSlides - 1) {
+                    nextBtn.style.opacity = '0';
+                    nextBtn.style.pointerEvents = 'none';
+                } else {
+                    nextBtn.style.opacity = '1';
+                    nextBtn.style.pointerEvents = 'auto';
+                }
+            }
 
             // Update classes and media states
             slides.forEach((slide, idx) => {
@@ -588,6 +608,7 @@ document.addEventListener('DOMContentLoaded', () => {
             posters: document.querySelector('.slider-posters'),
             logos: document.querySelector('.slider-logos'),
             banners: document.querySelector('.slider-banners'),
+            branding: document.querySelector('.slider-branding'),
             photo_product: document.querySelector('.slider-photography-product'),
             photo_model: document.querySelector('.slider-photography-model'),
             photo_events: document.querySelector('.slider-photography-events')

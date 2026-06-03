@@ -25,6 +25,13 @@
     "assets/banner/4.jpg",
     "assets/banner/5.jpg"
   ],
+  "branding": [
+    "assets/branding/C.jpg",
+    "assets/branding/cadini.jpg",
+    "assets/branding/natural+.jpg",
+    "assets/branding/psm.jpg",
+    "assets/branding/zamzam.png"
+  ],
   "photo_product": [
     "assets/photography/product/gm1.png",
     "assets/photography/product/gm2.png",
@@ -47,6 +54,6 @@
     "assets/photography/events/1.jpg",
     "assets/photography/events/2.jpg",
     "assets/photography/events/3.jpg",
-    "assets/photography/events/4.jpg"
+    "assets/photography/events/10.jpeg"
   ]
 }
