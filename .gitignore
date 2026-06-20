@@ -4,3 +4,7 @@ Thumbs.db
 .idea/
 *.log
 *.psd
+
+# Dependencies
+node_modules/
+package-lock.json
