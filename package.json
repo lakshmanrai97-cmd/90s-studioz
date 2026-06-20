@@ -1,0 +1,10 @@
+{
+  "name": "90s-studioz",
+  "version": "1.0.0",
+  "description": "90's Studioz - Creative Agency Website",
+  "private": true,
+  "scripts": {
+    "build": "echo 'No build step required for static site'",
+    "lint": "echo 'No linter configured'"
+  }
+}
