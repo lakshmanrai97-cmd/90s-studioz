@@ -7,11 +7,15 @@
     <title>90'sStudioz | Creative Agency</title>
     <meta name="description"
         content="90'sstudioz provides premium services in videography, photography, and graphic design.">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
+    <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap">
+    </noscript>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -22,7 +26,7 @@
     <div class="cursor-glow"></div>
 
     <header class="navbar hidden">
-        <a href="#home" class="logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo"></a>
+        <a href="#home" class="logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo" fetchpriority="high"></a>
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -146,6 +150,13 @@
                             <p>Bold and modern aesthetics</p>
                         </div>
                     </div>
+                    <div class="portfolio-item img-placeholder" id="ph-portfolio-branding"
+                        onclick="window.location.href='portfolio.html?category=branding'">
+                        <div class="portfolio-content">
+                            <h3>Personal Branding</h3>
+                            <p>Crafting your unique digital identity</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -156,115 +167,115 @@
             <div class="marquee-container">
                 <div class="marquee-content">
                     <!-- Original Set -->
-                    <div class="marquee-item"><img src="assets/logos/zamzam.png" alt="Zam Zam"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/zamzam.png" alt="Zam Zam"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Zam+Zam'"></div>
-                    <div class="marquee-item"><img src="assets/logos/adhikai_logo.png" alt="Adhikai"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/adhikai_logo.png" alt="Adhikai"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Adhikai'"></div>
-                    <div class="marquee-item"><img src="assets/logos/briyani_shop_logo.png" alt="Biryani Stories"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/briyani_shop_logo.png" alt="Biryani Stories"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Biryani+Stories'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/cadini_logo.png" alt="Cadini"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/cadini_logo.png" alt="Cadini"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Cadini'"></div>
-                    <div class="marquee-item"><img src="assets/logos/natural_health_logo.png" alt="Natural Health+"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/natural_health_logo.png" alt="Natural Health+"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Natural+Health%2B'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/crafteria_logo.png" alt="Crafteria"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/crafteria_logo.png" alt="Crafteria"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Crafteria'"></div>
-                    <div class="marquee-item"><img src="assets/logos/broadwayman_logo.png" alt="Broadwayman"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/broadwayman_logo.png" alt="Broadwayman"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Broadwayman'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/modern.png" alt="Modern"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/modern.png" alt="Modern"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Modern+Arts+College'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/GEENAS.png" alt="Geenas"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/GEENAS.png" alt="Geenas"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Geenas'"></div>
-                    <div class="marquee-item"><img src="assets/logos/askabhi.png" alt="Askabhi"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/askabhi.png" alt="Askabhi"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Askabhi'"></div>
-                    <div class="marquee-item"><img src="assets/logos/gota_moda.png" alt="Gota Moda"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/gota_moda.png" alt="Gota Moda"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Gota+Moda'"></div>
 
                     <!-- Duplicate Set 1 -->
-                    <div class="marquee-item"><img src="assets/logos/zamzam.png" alt="Zam Zam"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/zamzam.png" alt="Zam Zam"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Zam+Zam'"></div>
-                    <div class="marquee-item"><img src="assets/logos/adhikai_logo.png" alt="Adhikai"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/adhikai_logo.png" alt="Adhikai"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Adhikai'"></div>
-                    <div class="marquee-item"><img src="assets/logos/briyani_shop_logo.png" alt="Biryani Stories"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/briyani_shop_logo.png" alt="Biryani Stories"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Biryani+Stories'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/cadini_logo.png" alt="Cadini"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/cadini_logo.png" alt="Cadini"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Cadini'"></div>
-                    <div class="marquee-item"><img src="assets/logos/natural_health_logo.png" alt="Natural Health+"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/natural_health_logo.png" alt="Natural Health+"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Natural+Health%2B'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/crafteria_logo.png" alt="Crafteria"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/crafteria_logo.png" alt="Crafteria"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Crafteria'"></div>
-                    <div class="marquee-item"><img src="assets/logos/broadwayman_logo.png" alt="Broadwayman"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/broadwayman_logo.png" alt="Broadwayman"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Broadwayman'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/modern.png" alt="Modern"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/modern.png" alt="Modern"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Modern+Arts+College'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/GEENAS.png" alt="Geenas"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/GEENAS.png" alt="Geenas"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Geenas'"></div>
-                    <div class="marquee-item"><img src="assets/logos/askabhi.png" alt="Askabhi"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/askabhi.png" alt="Askabhi"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Askabhi'"></div>
-                    <div class="marquee-item"><img src="assets/logos/gota_moda.png" alt="Gota Moda"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/gota_moda.png" alt="Gota Moda"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Gota+Moda'"></div>
 
                     <!-- Duplicate Set 2 -->
-                    <div class="marquee-item"><img src="assets/logos/zamzam.png" alt="Zam Zam"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/zamzam.png" alt="Zam Zam"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Zam+Zam'"></div>
-                    <div class="marquee-item"><img src="assets/logos/adhikai_logo.png" alt="Adhikai"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/adhikai_logo.png" alt="Adhikai"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Adhikai'"></div>
-                    <div class="marquee-item"><img src="assets/logos/briyani_shop_logo.png" alt="Biryani Stories"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/briyani_shop_logo.png" alt="Biryani Stories"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Biryani+Stories'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/cadini_logo.png" alt="Cadini"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/cadini_logo.png" alt="Cadini"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Cadini'"></div>
-                    <div class="marquee-item"><img src="assets/logos/natural_health_logo.png" alt="Natural Health+"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/natural_health_logo.png" alt="Natural Health+"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Natural+Health%2B'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/crafteria_logo.png" alt="Crafteria"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/crafteria_logo.png" alt="Crafteria"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Crafteria'"></div>
-                    <div class="marquee-item"><img src="assets/logos/broadwayman_logo.png" alt="Broadwayman"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/broadwayman_logo.png" alt="Broadwayman"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Broadwayman'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/modern.png" alt="Modern"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/modern.png" alt="Modern"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Modern+Arts+College'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/GEENAS.png" alt="Geenas"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/GEENAS.png" alt="Geenas"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Geenas'"></div>
-                    <div class="marquee-item"><img src="assets/logos/askabhi.png" alt="Askabhi"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/askabhi.png" alt="Askabhi"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Askabhi'"></div>
-                    <div class="marquee-item"><img src="assets/logos/gota_moda.png" alt="Gota Moda"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/gota_moda.png" alt="Gota Moda"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Gota+Moda'"></div>
 
                     <!-- Duplicate Set 3 -->
-                    <div class="marquee-item"><img src="assets/logos/zamzam.png" alt="Zam Zam"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/zamzam.png" alt="Zam Zam"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Zam+Zam'"></div>
-                    <div class="marquee-item"><img src="assets/logos/adhikai_logo.png" alt="Adhikai"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/adhikai_logo.png" alt="Adhikai"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Adhikai'"></div>
-                    <div class="marquee-item"><img src="assets/logos/briyani_shop_logo.png" alt="Biryani Stories"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/briyani_shop_logo.png" alt="Biryani Stories"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Biryani+Stories'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/cadini_logo.png" alt="Cadini"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/cadini_logo.png" alt="Cadini"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Cadini'"></div>
-                    <div class="marquee-item"><img src="assets/logos/natural_health_logo.png" alt="Natural Health+"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/natural_health_logo.png" alt="Natural Health+"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Natural+Health%2B'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/crafteria_logo.png" alt="Crafteria"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/crafteria_logo.png" alt="Crafteria"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Crafteria'"></div>
-                    <div class="marquee-item"><img src="assets/logos/broadwayman_logo.png" alt="Broadwayman"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/broadwayman_logo.png" alt="Broadwayman"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Broadwayman'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/modern.png" alt="Modern"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/modern.png" alt="Modern"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Modern+Arts+College'">
                     </div>
-                    <div class="marquee-item"><img src="assets/logos/GEENAS.png" alt="Geenas"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/GEENAS.png" alt="Geenas"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Geenas'"></div>
-                    <div class="marquee-item"><img src="assets/logos/askabhi.png" alt="Askabhi"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/askabhi.png" alt="Askabhi"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Askabhi'"></div>
-                    <div class="marquee-item"><img src="assets/logos/gota_moda.png" alt="Gota Moda"
+                    <div class="marquee-item"><img loading="lazy" src="assets/logos/gota_moda.png" alt="Gota Moda"
                             onerror="this.src='https://via.placeholder.com/200x80/272343/ffffff?text=Gota+Moda'"></div>
                 </div>
             </div>
@@ -380,7 +391,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

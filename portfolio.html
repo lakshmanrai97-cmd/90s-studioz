@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>90'sStudioz | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap">
+    </noscript>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -16,7 +21,7 @@
     <div class="cursor-glow"></div>
 
     <header class="navbar scrolled">
-        <a href="index.html#home" class="logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo"></a>
+        <a href="index.html#home" class="logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo" fetchpriority="high"></a>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
@@ -41,6 +46,7 @@
                     <button class="filter-btn" data-filter="video">Videography</button>
                     <button class="filter-btn" data-filter="photo">Photography</button>
                     <button class="filter-btn" data-filter="design">Graphic Design</button>
+                    <button class="filter-btn" data-filter="branding">Personal Branding</button>
                 </div>
             </div>
         </section>
@@ -467,9 +473,9 @@
                         </div>
                     </div>
 
-                    <div class="portfolio-row category-item dynamic-showcase-row" data-category="design">
+                    <div class="portfolio-row category-item dynamic-showcase-row" data-category="branding">
                         <div class="showcase-header">
-                            <h2>Branding</h2>
+                            <h2>Personal Branding</h2>
                             <p>Complete visual identity systems, bespoke corporate stationery, premium packaging, and
                                 brand guidelines crafted to establish a powerful and unforgettable market presence.</p>
                         </div>
@@ -518,7 +524,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 <!-- Automated Design Previews Hook Active -->
 

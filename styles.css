@@ -528,7 +528,7 @@ section {
 
 @media (min-width: 1024px) {
     .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -652,6 +652,10 @@ section {
 
 #ph-portfolio-design {
     background-image: url('assets/design.png');
+}
+
+#ph-portfolio-branding {
+    background-image: url('assets/branding.png');
 }
 
 /* Testimonials */
