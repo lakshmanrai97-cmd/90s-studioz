@@ -609,6 +609,8 @@ document.addEventListener('DOMContentLoaded', () => {
             logos: document.querySelector('.slider-logos'),
             banners: document.querySelector('.slider-banners'),
             branding: document.querySelector('.slider-branding'),
+            flyers: document.querySelector('.slider-flyers'),
+            brochures: document.querySelector('.slider-brochures'),
             photo_product: document.querySelector('.slider-photography-product'),
             photo_model: document.querySelector('.slider-photography-model'),
             photo_events: document.querySelector('.slider-photography-events')
@@ -627,13 +629,28 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (!sliderContainer || !paths || paths.length === 0) continue;
 
                     let newHtml = '';
-                    paths.forEach(imagePath => {
+                    paths.forEach(item => {
+                        // Support both old array of strings and new array of objects
+                        const imagePath = typeof item === 'string' ? item : item.image;
+                        const pdfPath = typeof item === 'string' ? null : item.pdf;
+
                         const filename = imagePath.split('/').pop().split('.')[0];
                         const readableName = filename
                             .replace(/[_-]/g, ' ')
                             .replace(/\b\w/g, c => c.toUpperCase());
 
-                        newHtml += `<div class="showcase-slide"><img src="${imagePath}" alt="${readableName}"></div>`;
+                        if (pdfPath) {
+                            newHtml += `
+                                <div class="showcase-slide clickable-pdf" onclick="window.open('${pdfPath}', '_blank')" title="Click to view PDF">
+                                    <img src="${imagePath}" alt="${readableName}">
+                                    <div class="pdf-indicator">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                        <span>View PDF</span>
+                                    </div>
+                                </div>`;
+                        } else {
+                            newHtml += `<div class="showcase-slide"><img src="${imagePath}" alt="${readableName}"></div>`;
+                        }
                     });
 
                     // Zero-layout-shift DOM updater: only update if contents changed

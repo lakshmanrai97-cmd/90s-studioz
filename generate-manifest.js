@@ -7,9 +7,32 @@ const directories = {
     logos: 'assets/logos',
     banners: 'assets/banner',
     branding: 'assets/branding',
+    flyers: 'assets/pamplets',
+    brochures: 'assets/brouchures',
     photo_product: 'assets/photography/product',
     photo_model: 'assets/photography/model',
     photo_events: 'assets/photography/events'
+};
+
+const getMatchingPdf = (dirPath, filename) => {
+    // 1. Exact match with .pdf extension
+    const baseName = path.basename(filename, path.extname(filename));
+    const exactPdfPath = path.join(__dirname, dirPath, baseName + '.pdf');
+    if (fs.existsSync(exactPdfPath)) {
+        return `${dirPath}/${baseName}.pdf`;
+    }
+    
+    // 2. Suffix match (e.g. filename ends with _page-0001 or _page-1)
+    const suffixRegex = /_page-\d+$/i;
+    if (suffixRegex.test(baseName)) {
+        const cleanBaseName = baseName.replace(suffixRegex, '');
+        const suffixPdfPath = path.join(__dirname, dirPath, cleanBaseName + '.pdf');
+        if (fs.existsSync(suffixPdfPath)) {
+            return `${dirPath}/${cleanBaseName}.pdf`;
+        }
+    }
+    
+    return null;
 };
 
 const manifest = {};
@@ -34,7 +57,14 @@ for (const [key, dirPath] of Object.entries(directories)) {
             return ['.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp'].includes(ext);
         })
         .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }))
-        .map(file => `${dirPath}/${file}`); // Store relative paths e.g. assets/posters/INVITES_3.jpg
+        .map(file => {
+            const item = { image: `${dirPath}/${file}` };
+            const pdf = getMatchingPdf(dirPath, file);
+            if (pdf) {
+                item.pdf = pdf;
+            }
+            return item;
+        });
 
     manifest[key] = validImages;
     fileCount += validImages.length;

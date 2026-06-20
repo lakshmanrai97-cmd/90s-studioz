@@ -1,59 +1,168 @@
 {
   "posters": [
-    "assets/posters/christmas_poster.png",
-    "assets/posters/INVITES_3.jpg",
-    "assets/posters/janmashtami.jpg",
-    "assets/posters/navratri.png"
+    {
+      "image": "assets/posters/christmas_poster.png"
+    },
+    {
+      "image": "assets/posters/hanuman.png"
+    },
+    {
+      "image": "assets/posters/INVITES_3.jpg"
+    },
+    {
+      "image": "assets/posters/janmashtami.jpg"
+    },
+    {
+      "image": "assets/posters/navratri.png"
+    }
   ],
   "logos": [
-    "assets/logos/adhikai_logo.png",
-    "assets/logos/askabhi.png",
-    "assets/logos/briyani_shop_logo.png",
-    "assets/logos/broadwayman_logo.png",
-    "assets/logos/cadini_logo.png",
-    "assets/logos/crafteria_logo.png",
-    "assets/logos/GEENAS.png",
-    "assets/logos/gota_moda.png",
-    "assets/logos/modern.png",
-    "assets/logos/natural_health_logo.png",
-    "assets/logos/zamzam.png"
+    {
+      "image": "assets/logos/adhikai_logo.png"
+    },
+    {
+      "image": "assets/logos/askabhi.png"
+    },
+    {
+      "image": "assets/logos/briyani_shop_logo.png"
+    },
+    {
+      "image": "assets/logos/broadwayman_logo.png"
+    },
+    {
+      "image": "assets/logos/cadini_logo.png"
+    },
+    {
+      "image": "assets/logos/crafteria_logo.png"
+    },
+    {
+      "image": "assets/logos/GEENAS.png"
+    },
+    {
+      "image": "assets/logos/gota_moda.png"
+    },
+    {
+      "image": "assets/logos/modern.png"
+    },
+    {
+      "image": "assets/logos/natural_health_logo.png"
+    },
+    {
+      "image": "assets/logos/zamzam.png"
+    }
   ],
   "banners": [
-    "assets/banner/1.jpg",
-    "assets/banner/2.jpg",
-    "assets/banner/3.jpg",
-    "assets/banner/4.jpg",
-    "assets/banner/5.jpg"
+    {
+      "image": "assets/banner/1.jpg"
+    },
+    {
+      "image": "assets/banner/2.jpg"
+    },
+    {
+      "image": "assets/banner/3.jpg"
+    },
+    {
+      "image": "assets/banner/4.jpg"
+    },
+    {
+      "image": "assets/banner/5.jpg"
+    }
   ],
   "branding": [
-    "assets/branding/C.jpg",
-    "assets/branding/cadini.jpg",
-    "assets/branding/natural+.jpg",
-    "assets/branding/psm.jpg",
-    "assets/branding/zamzam.png"
+    {
+      "image": "assets/branding/C.jpg"
+    },
+    {
+      "image": "assets/branding/cadini.jpg"
+    },
+    {
+      "image": "assets/branding/natural+.jpg"
+    },
+    {
+      "image": "assets/branding/psm.jpg"
+    },
+    {
+      "image": "assets/branding/zamzam.png"
+    }
+  ],
+  "flyers": [
+    {
+      "image": "assets/pamplets/Bangalore Pamphlet Front & Back_page-0001.jpg"
+    },
+    {
+      "image": "assets/pamplets/Bangalore Pamphlet Front & Back_page-0002.jpg"
+    },
+    {
+      "image": "assets/pamplets/Final Pamphlet SPK_page-0001.jpg"
+    },
+    {
+      "image": "assets/pamplets/Final Pamphlet SPK_page-0002.jpg"
+    }
+  ],
+  "brochures": [
+    {
+      "image": "assets/brouchures/Engineering Brochure_25 Jan 2025_.png",
+      "pdf": "assets/brouchures/Engineering Brochure_25 Jan 2025_.pdf"
+    }
   ],
   "photo_product": [
-    "assets/photography/product/gm1.png",
-    "assets/photography/product/gm2.png",
-    "assets/photography/product/gm3.png",
-    "assets/photography/product/gm4.png",
-    "assets/photography/product/jewel.png",
-    "assets/photography/product/jewel1.png",
-    "assets/photography/product/jewel2.png",
-    "assets/photography/product/jewel3.png"
+    {
+      "image": "assets/photography/product/gm1.png"
+    },
+    {
+      "image": "assets/photography/product/gm2.png"
+    },
+    {
+      "image": "assets/photography/product/gm3.png"
+    },
+    {
+      "image": "assets/photography/product/gm4.png"
+    },
+    {
+      "image": "assets/photography/product/jewel.png"
+    },
+    {
+      "image": "assets/photography/product/jewel1.png"
+    },
+    {
+      "image": "assets/photography/product/jewel2.png"
+    },
+    {
+      "image": "assets/photography/product/jewel3.png"
+    }
   ],
   "photo_model": [
-    "assets/photography/model/model1.png",
-    "assets/photography/model/model2.png",
-    "assets/photography/model/model3.png",
-    "assets/photography/model/model4.png",
-    "assets/photography/model/model5.png",
-    "assets/photography/model/model6.png"
+    {
+      "image": "assets/photography/model/model1.png"
+    },
+    {
+      "image": "assets/photography/model/model2.png"
+    },
+    {
+      "image": "assets/photography/model/model3.png"
+    },
+    {
+      "image": "assets/photography/model/model4.png"
+    },
+    {
+      "image": "assets/photography/model/model5.png"
+    },
+    {
+      "image": "assets/photography/model/model6.png"
+    }
   ],
   "photo_events": [
-    "assets/photography/events/1.jpg",
-    "assets/photography/events/2.jpg",
-    "assets/photography/events/3.jpg",
-    "assets/photography/events/10.jpeg"
+    {
+      "image": "assets/photography/events/1.jpg"
+    },
+    {
+      "image": "assets/photography/events/2.jpg"
+    },
+    {
+      "image": "assets/photography/events/3.jpg"
+    },
+    {
+      "image": "assets/photography/events/10.jpeg"
+    }
   ]
 }
