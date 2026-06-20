@@ -7,7 +7,6 @@
     <title>90'sStudioz | Creative Agency</title>
     <meta name="description"
         content="90'sstudioz provides premium services in videography, photography, and graphic design.">
-    <meta name="google-site-verification" content="sv3aRldHn1YOddg0iKS0-kgbwASspMNHOrfOlc8wUL4" />
     <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +70,85 @@
             </div>
         </section>
 
-        <!-- Old Services Section Removed -->
+        <!-- Services Text Marquee -->
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <div class="marquee-item">Ad Shoots <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">3D Related Works <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Events <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Photoshoots <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Posters <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Logos <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Scripting <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Editing <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Printing <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Music Composing <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Ad Shoots <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">3D Related Works <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Events <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Photoshoots <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Posters <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Logos <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Scripting <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Editing <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Printing <div class="marquee-dot"></div>
+                </div>
+                <div class="marquee-item">Music Composing <div class="marquee-dot"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Services Section (Formerly Portfolio) -->
+        <section id="services" class="portfolio hidden">
+            <div class="container">
+                <div class="portfolio-header">
+                    <h2 class="section-title">What We Do</h2>
+                </div>
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <div class="portfolio-item img-placeholder" id="ph-portfolio-video"
+                        onclick="window.location.href='portfolio.html?category=video'">
+                        <div class="portfolio-content">
+                            <h3>Videography</h3>
+                            <p>Cinematic visually stunning narratives</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item img-placeholder" id="ph-portfolio-photo"
+                        onclick="window.location.href='portfolio.html?category=photo'">
+                        <div class="portfolio-content">
+                            <h3>Photography</h3>
+                            <p>Capturing the perfect moment</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item img-placeholder" id="ph-portfolio-design"
+                        onclick="window.location.href='portfolio.html?category=design'">
+                        <div class="portfolio-content">
+                            <h3>Graphic Design</h3>
+                            <p>Bold and modern aesthetics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Logo Marquee Section -->
         <section class="logo-marquee-section">
@@ -193,38 +270,6 @@
             </div>
         </section>
 
-        <!-- Services Section (Formerly Portfolio) -->
-        <section id="services" class="portfolio hidden">
-            <div class="container">
-                <div class="portfolio-header">
-                    <h2 class="section-title">Our Services</h2>
-                </div>
-                <div class="portfolio-grid" id="portfolioGrid">
-                    <div class="portfolio-item img-placeholder" id="ph-portfolio-video"
-                        onclick="window.location.href='portfolio.html?category=video'">
-                        <div class="portfolio-content">
-                            <h3>Videography</h3>
-                            <p>Cinematic visually stunning narratives</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item img-placeholder" id="ph-portfolio-photo"
-                        onclick="window.location.href='portfolio.html?category=photo'">
-                        <div class="portfolio-content">
-                            <h3>Photography</h3>
-                            <p>Capturing the perfect moment</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item img-placeholder" id="ph-portfolio-design"
-                        onclick="window.location.href='portfolio.html?category=design'">
-                        <div class="portfolio-content">
-                            <h3>Graphic Design</h3>
-                            <p>Bold and modern aesthetics</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials hidden">
             <div class="container">
@@ -297,27 +342,13 @@
         </section>
 
         <!-- Contact Section -->
-        <!-- 
-        <section id="contact" class="contact hidden">
-            <div class="container glass-panel">
-                <h2>Let's Create Together</h2>
-                <form class="contact-form" action="https://formsubmit.co/ninetystudioz@gmail.com" method="POST">
-                    <input type="hidden" name="_captcha" value="false">
-                    <div class="input-group">
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                    </div>
-                    <div class="input-group">
-                        <input type="email" id="email" name="email" required placeholder="Your Email">
-                    </div>
-                    <div class="input-group">
-                        <textarea id="message" name="message" rows="5" required
-                            placeholder="Tell us about your project..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
+        <section id="contact" class="contact-banner-section hidden">
+            <div class="container">
+                <h2>Your Story Deserves the Spotlight</h2>
+                <a href="https://wa.me/919790775405" target="_blank" rel="noopener noreferrer"
+                    class="btn-contact-banner">Connect with us!</a>
             </div>
         </section>
-        -->
     </main>
 
     <footer class="footer-section">
@@ -329,22 +360,27 @@
         <div class="container footer-content">
             <div class="footer-logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo"></div>
             <p>&copy; 2026 90'sstudioz, All rights reserved.</p>
-            <div class="socials">
-                <a href="https://www.instagram.com/ninetiestudioz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                    aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-instagram">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </a>
+            <div class="footer-info">
+                <div class="socials">
+                    <a href="https://www.instagram.com/ninetiestudioz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-instagram">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span class="social-label">Instagram</span>
+                    </a>
+                    <p class="footer-contact-row"><a href="mailto:ninetystudioz@gmail.com"
+                            class="footer-mail">ninetystudioz@gmail.com</a></p>
+                </div>
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
-    
 </body>
 
 </html>
