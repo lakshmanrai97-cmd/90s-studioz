@@ -7,7 +7,7 @@ const directories = {
     logos: 'assets/logos',
     banners: 'assets/banner',
     branding: 'assets/branding',
-    flyers: 'assets/pamplets',
+    flyers: 'assets/flyer',
     brochures: 'assets/brouchures',
     photo_product: 'assets/photography/product',
     photo_model: 'assets/photography/model',

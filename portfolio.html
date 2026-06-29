@@ -13,7 +13,8 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap">
     </noscript>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="style" href="styles.min.css">
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <div class="cursor-glow"></div>
 
     <header class="navbar scrolled">
-        <a href="index.html#home" class="logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo" fetchpriority="high"></a>
+        <a href="index.html#home" class="logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo" fetchpriority="high" width="95" height="50"></a>
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
@@ -385,14 +386,8 @@
                         </div>
                         <div class="showcase-slider-wrapper">
                             <div class="showcase-slider slider-posters">
-                                <div class="showcase-slide"><img src="assets/posters/christmas_poster.png"
-                                        alt="Christmas Event Poster"></div>
-                                <div class="showcase-slide"><img src="assets/posters/INVITES_3.jpg"
-                                        alt="Custom Event Invitation Poster"></div>
-                                <div class="showcase-slide"><img src="assets/posters/janmashtami.jpg"
-                                        alt="Janmashtami Event Poster"></div>
-                                <div class="showcase-slide"><img src="assets/posters/navratri.png"
-                                        alt="Navratri Festival Poster"></div>
+                                <div class="showcase-slide"><img src="assets/posters/A5_Leaflet_Mockup_1.png"
+                                        alt="A5 Leaflet Mockup Poster"></div>
                             </div>
                         </div>
                     </div>
@@ -406,9 +401,7 @@
                             <div class="showcase-slider slider-flyers">
                                 <div class="showcase-slide"><img
                                         src="assets/flyer/2-side.png"
-                                        alt="Bangalore Pamphlet Front & Back"></div>
-                                <div class="showcase-slide"><img src="assets/flyer/2-side.png"
-                                        alt="Final Pamphlet SPK"></div>
+                                        alt="2-side Flyer"></div>
                             </div>
                         </div>
                     </div>
@@ -422,7 +415,19 @@
                             <div class="showcase-slider slider-brochures">
                                 <div class="showcase-slide"><img
                                         src="assets/brouchures/4-side.png"
-                                        alt="Engineering Brochure"></div>
+                                        alt="4-side Brochure"></div>
+                                <div class="showcase-slide"><img
+                                        src="assets/brouchures/Engineering Brochure_25 Jan 2025__page-0001.jpg"
+                                        alt="Engineering Brochure Page 1"></div>
+                                <div class="showcase-slide"><img
+                                        src="assets/brouchures/Engineering Brochure_25 Jan 2025__page-0002.jpg"
+                                        alt="Engineering Brochure Page 2"></div>
+                                <div class="showcase-slide"><img
+                                        src="assets/brouchures/Engineering Brochure_25 Jan 2025__page-0003.jpg"
+                                        alt="Engineering Brochure Page 3"></div>
+                                <div class="showcase-slide"><img
+                                        src="assets/brouchures/Engineering Brochure_25 Jan 2025__page-0004.jpg"
+                                        alt="Engineering Brochure Page 4"></div>
                             </div>
                         </div>
                     </div>
@@ -503,7 +508,7 @@
             <span>90's Studioz</span>
         </div>
         <div class="container footer-content">
-            <div class="footer-logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo"></div>
+            <div class="footer-logo"><img src="assets/logo.png" alt="90'sstudioz Logo" class="brand-logo" width="95" height="50" loading="lazy"></div>
             <div class="footer-info">
                 <p>&copy; 2026 90'sstudioz, All rights reserved.</p>
                 <p class="footer-contact-row"><a href="mailto:ninetystudioz@gmail.com" class="footer-mail">ninetystudioz@gmail.com</a></p>
@@ -524,7 +529,7 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.min.js" defer></script>
 </body>
 <!-- Automated Design Previews Hook Active -->
 

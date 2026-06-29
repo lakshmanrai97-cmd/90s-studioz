@@ -1,19 +1,7 @@
 {
   "posters": [
     {
-      "image": "assets/posters/christmas_poster.png"
-    },
-    {
-      "image": "assets/posters/hanuman.png"
-    },
-    {
-      "image": "assets/posters/INVITES_3.jpg"
-    },
-    {
-      "image": "assets/posters/janmashtami.jpg"
-    },
-    {
-      "image": "assets/posters/navratri.png"
+      "image": "assets/posters/A5_Leaflet_Mockup_1.png"
     }
   ],
   "logos": [
@@ -87,22 +75,24 @@
   ],
   "flyers": [
     {
-      "image": "assets/pamplets/Bangalore Pamphlet Front & Back_page-0001.jpg"
-    },
-    {
-      "image": "assets/pamplets/Bangalore Pamphlet Front & Back_page-0002.jpg"
-    },
-    {
-      "image": "assets/pamplets/Final Pamphlet SPK_page-0001.jpg"
-    },
-    {
-      "image": "assets/pamplets/Final Pamphlet SPK_page-0002.jpg"
+      "image": "assets/flyer/2-side.png"
     }
   ],
   "brochures": [
     {
-      "image": "assets/brouchures/Engineering Brochure_25 Jan 2025_.png",
-      "pdf": "assets/brouchures/Engineering Brochure_25 Jan 2025_.pdf"
+      "image": "assets/brouchures/4-side.png"
+    },
+    {
+      "image": "assets/brouchures/Engineering Brochure_25 Jan 2025__page-0001.jpg"
+    },
+    {
+      "image": "assets/brouchures/Engineering Brochure_25 Jan 2025__page-0002.jpg"
+    },
+    {
+      "image": "assets/brouchures/Engineering Brochure_25 Jan 2025__page-0003.jpg"
+    },
+    {
+      "image": "assets/brouchures/Engineering Brochure_25 Jan 2025__page-0004.jpg"
     }
   ],
   "photo_product": [

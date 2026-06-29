@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
@@ -53,13 +52,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const cursorGlow = document.querySelector('.cursor-glow');
 
     if (cursorGlow) {
+        let targetX = window.innerWidth / 2;
+        let targetY = window.innerHeight / 2;
+        let currentX = targetX;
+        let currentY = targetY;
+        let frameRequested = false;
+
         window.addEventListener('mousemove', (e) => {
-            // Create fluid trailing animation using Web Animations API
-            cursorGlow.animate({
-                left: `${e.clientX}px`,
-                top: `${e.clientY}px`
-            }, { duration: 3000, fill: 'forwards' });
+            targetX = e.clientX;
+            targetY = e.clientY;
+            
+            if (!frameRequested) {
+                frameRequested = true;
+                requestAnimationFrame(updateCursor);
+            }
         });
+
+        function updateCursor() {
+            // Linear interpolation for smooth trailing lag effect
+            currentX += (targetX - currentX) * 0.15;
+            currentY += (targetY - currentY) * 0.15;
+            
+            cursorGlow.style.left = `${currentX}px`;
+            cursorGlow.style.top = `${currentY}px`;
+            
+            if (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1) {
+                requestAnimationFrame(updateCursor);
+            } else {
+                frameRequested = false;
+            }
+        }
     }
 
     // Intersection Observer for scroll animations
@@ -672,4 +694,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Dynamic Showcase Manifest Loader
     initDynamicDesignShowcases();
 
-});
